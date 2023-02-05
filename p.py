@@ -54,7 +54,7 @@ try:
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[11]/div/a[1]').click()
     time.sleep(2)
-    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjsndkfjn@gmail.com')
+    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjsndkfsdajn@gmail.com')
     time.sleep(2)
     driver.find_element(By.XPATH, "//*[@data-sigil='touchable multi_step_next']").click()
         
@@ -69,14 +69,21 @@ try:
     driver.find_element(By.XPATH, '//*[@id="password_step_input"]').send_keys('odfklgjgljgdfg')
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[9]/div[2]/button[4]').click()
+    time.sleep(2)
+    driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div/div/div[3]/div[2]/form/div/button').click()
+    time.sleep(2)
+    driver.find_element(By.XPATH, '//*[@id="m_conf_cliff_root_id"]/div/div/form/div/input"]').send_keys('32312')
+    time.sleep(2)
+    driver.find_element(By.XPATH, '//*[@id="m_conf_cliff_root_id"]/div/div/form/a').click()
+    
+    
+    
+    
     time.sleep(5)
     for a in range(20):
         time.sleep(5)
         driver.save_screenshot('finsh.png')
     #driver.close()
     print('ues')
-    driver.close()
 except Exception as s:
     print(s)
-    driver.save_screenshot('erro.png')
-    driver.close()
