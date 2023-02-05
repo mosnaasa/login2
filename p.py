@@ -1,4 +1,10 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import random
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+from random import choice
 from webdriver_manager.firefox import GeckoDriverManager
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
