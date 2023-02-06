@@ -54,7 +54,7 @@ try:
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[11]/div/a[1]').click()
     time.sleep(2)
-    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjsndkfsdajn@gmail.com')
+    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjsndkffdffdffn@gmail.com')
     time.sleep(2)
     driver.find_element(By.XPATH, "//*[@data-sigil='touchable multi_step_next']").click()
         
