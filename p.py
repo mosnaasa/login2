@@ -15,7 +15,7 @@ print(driver.title)
 
 try:
     #button = driver.find_element(By.CSS_SELECTOR, "[data-testid='open-registration-form-button']").click()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(40)
     driver.get("https://m.facebook.com/reg/?logger_id&cid=103&next=https%3A%2F%2Fm.facebook.com%2Fhome.php&refsrc=deprecated&soft=hjk")
 
     driver.save_screenshot('0.png')
@@ -71,10 +71,14 @@ try:
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[9]/div[2]/button[4]').click()
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div/div/div[3]/div[2]/form/div/button').click()
-    time.sleep(2)
+    driver.save_screenshot('4.png')
+    time.sleep(15)
+    driver.save_screenshot('5.png')
     driver.find_element(By.XPATH, '//*[@id="m_conf_cliff_root_id"]/div/div/form/div/input"]').send_keys('32312')
+    driver.save_screenshot('6.png')
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="m_conf_cliff_root_id"]/div/div/form/a').click()
+    driver.save_screenshot('7.png')
     
     
     
@@ -83,7 +87,9 @@ try:
     for a in range(20):
         time.sleep(5)
         driver.save_screenshot('finsh.png')
-    #driver.close()
+    driver.close()
     print('ues')
 except Exception as s:
     print(s)
+    driver.save_screenshot('erro.png')
+    driver.close()
