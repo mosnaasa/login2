@@ -20,11 +20,11 @@ try:
 
     driver.save_screenshot('0.png')
     time.sleep(2)
-    driver.find_element(By.NAME, "firstname").send_keys("mona")
+    driver.find_element(By.NAME, "firstname").send_keys("nour")
     driver.save_screenshot('1.png')
     time.sleep(2)
     print('firstname')
-    driver.find_element(By.NAME, "lastname").send_keys("ali")
+    driver.find_element(By.NAME, "lastname").send_keys("mohamed")
     time.sleep(2)
     print('lastname')
     driver.find_element(By.XPATH, "//*[@data-sigil='touchable multi_step_next']").click()
@@ -54,7 +54,7 @@ try:
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[11]/div/a[1]').click()
     time.sleep(2)
-    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjsndkffdffdffn@gmail.com')
+    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('kjklfklfgjlgjn@gmail.com')
     time.sleep(2)
     driver.find_element(By.XPATH, "//*[@data-sigil='touchable multi_step_next']").click()
         
