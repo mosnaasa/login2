@@ -25,7 +25,7 @@ try:
 
     #driver.save_screenshot('0.png')
     time.sleep(2)
-    driver.find_element(By.NAME, "firstname").send_keys("ahmed")
+    driver.find_element(By.NAME, "firstname").send_keys("ali")
     #driver.save_screenshot('1.png')
     time.sleep(2)
     print('firstname')
@@ -59,7 +59,7 @@ try:
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="mobile-reg-form"]/div[11]/div/a[1]').click()
     time.sleep(2)
-    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('skjdsnjk2djkskjN@gmail.com')
+    driver.find_element(By.XPATH, '//*[@id="contactpoint_step_input"]').send_keys('skljskjjN@gmail.com')
     time.sleep(2)
     driver.find_element(By.XPATH, "//*[@data-sigil='touchable multi_step_next']").click()
         
@@ -80,9 +80,9 @@ try:
     #driver.save_screenshot('4.png')
     time.sleep(6)
     driver.save_screenshot('5.png')
-    code_confirgt = input('code: ')
+    #code_confirgt = input('code: ')
     
-    driver.find_element(By.NAME, "c").send_keys(code_confirgt)
+    driver.find_element(By.NAME, "c").send_keys('84792')
     driver.save_screenshot('6.png')
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="m_conf_cliff_root_id"]/div/div/form/a').click()
